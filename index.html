@@ -4,15 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cirrobound Solutions</title>
-
+  <meta
+    name="description"
+    content="Cirrobound Solutions helps professional service businesses reduce manual work, improve efficiency, and prepare their systems for automation and AI."
+  />
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     .reveal {
       opacity: 0;
-      transform: translateY(28px);
+      transform: translateY(24px);
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
+
     .reveal.show {
       opacity: 1;
       transform: translateY(0);
@@ -22,205 +30,455 @@
 
 <body class="bg-slate-200 text-slate-900">
 
-<!-- NAV -->
-<nav class="bg-slate-100 border-b border-slate-300">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-slate-100/95 backdrop-blur border-b border-slate-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    <div class="flex items-center gap-3">
-      <img src="assets/logo.png" class="h-14"/>
+      <div class="flex items-center gap-3">
+        <img
+          src="assets/logo.png"
+          alt="Cirrobound Solutions"
+          class="h-14 w-auto"
+        />
+        <div class="leading-tight">
+          <div class="font-semibold text-lg text-slate-900">Cirrobound</div>
+          <div class="text-xs text-slate-600">Solutions</div>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+        <a href="#services" class="transition hover:text-blue-700">Services</a>
+        <a href="#how" class="transition hover:text-blue-700">How It Works</a>
+        <a href="#example" class="transition hover:text-blue-700">Example</a>
+        <a href="#fit" class="transition hover:text-blue-700">Who It’s For</a>
+        <a href="#faq" class="transition hover:text-blue-700">FAQ</a>
+      </div>
+
+      <a
+        href="#audit"
+        class="bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition hover:bg-blue-800 hover:scale-[1.03]"
+      >
+        Book Audit
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 text-white reveal">
+    <div class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-10 items-center">
+
       <div>
-        <div class="font-semibold text-lg">Cirrobound</div>
-        <div class="text-xs text-slate-600">Solutions</div>
+        <div class="inline-block bg-white/15 border border-white/20 px-3 py-1.5 rounded-full text-sm mb-5">
+          Workflow-heavy businesses • Practical modernization • AI readiness
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-5">
+          Reduce Manual Work. Improve Efficiency. Prepare for AI.
+        </h1>
+
+        <p class="text-lg text-blue-100 max-w-2xl mb-7">
+          We help professional service businesses with workflow-heavy operations reduce manual work, improve coordination, and prepare their systems for automation and AI.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 mb-4">
+          <a
+            href="#audit"
+            class="bg-white text-blue-700 px-5 py-3 rounded-lg font-medium transition hover:bg-blue-50 hover:scale-[1.02] text-center"
+          >
+            Book Your AI Readiness Audit
+          </a>
+
+          <a
+            href="#how"
+            class="border border-white/30 px-5 py-3 rounded-lg transition hover:bg-white/10 text-center"
+          >
+            See How It Works
+          </a>
+        </div>
+
+        <p class="text-sm text-blue-100">
+          15 minutes • No obligation • Clear next steps
+        </p>
+      </div>
+
+      <div>
+        <div class="bg-white rounded-2xl p-3 shadow-xl">
+          <img
+            src="assets/hero.jpg"
+            alt="Workflow and systems optimization"
+            class="rounded-xl w-full h-[260px] object-cover"
+          />
+        </div>
+
+        <div class="grid grid-cols-3 gap-3 mt-4">
+          <div class="bg-white p-4 rounded-xl border border-slate-300 shadow-sm transition hover:shadow-md">
+            <div class="text-xs uppercase tracking-wide text-slate-500 mb-2">Cost</div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-lg font-bold text-slate-900">↓</span>
+              <span class="font-semibold text-slate-900">Lower overhead</span>
+            </div>
+            <p class="text-xs text-slate-600">
+              Reduce avoidable admin and coordination cost.
+            </p>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl border border-slate-300 shadow-sm transition hover:shadow-md">
+            <div class="text-xs uppercase tracking-wide text-slate-500 mb-2">Time</div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-lg font-bold text-slate-900">↓</span>
+              <span class="font-semibold text-slate-900">Faster execution</span>
+            </div>
+            <p class="text-xs text-slate-600">
+              Spend less time chasing information and repeating work.
+            </p>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl border border-slate-300 shadow-sm transition hover:shadow-md">
+            <div class="text-xs uppercase tracking-wide text-slate-500 mb-2">Clarity</div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-lg font-bold text-slate-900">↑</span>
+              <span class="font-semibold text-slate-900">More control</span>
+            </div>
+            <p class="text-xs text-slate-600">
+              Improve visibility across workflows and responsibilities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="bg-slate-100 border-y border-slate-300 reveal">
+    <div class="max-w-7xl mx-auto px-6 py-5">
+      <div class="grid md:grid-cols-4 gap-4 text-center text-sm text-slate-700">
+        <div>Practical, low-risk modernization</div>
+        <div>Built for professional service businesses</div>
+        <div>Operational improvement before tool overload</div>
+        <div>Focused on real efficiency gains</div>
       </div>
     </div>
+  </section>
 
-    <a href="#audit" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">
-      Book Audit
-    </a>
+  <!-- SERVICES -->
+  <section id="services" class="py-14 reveal">
+    <div class="max-w-7xl mx-auto px-6">
 
-  </div>
-</nav>
+      <div class="max-w-3xl mb-8">
+        <p class="text-sm font-semibold uppercase tracking-wide text-blue-800 mb-2">
+          Services
+        </p>
+        <h2 class="text-3xl font-bold mb-3">What We Help Improve</h2>
+        <p class="text-slate-700">
+          We focus on the operational problems that create friction, slow down delivery, and make automation harder than it should be.
+        </p>
+      </div>
 
-<!-- HERO -->
-<section class="bg-gradient-to-r from-blue-800 to-blue-600 text-white reveal">
-  <div class="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-8 items-center">
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <h3 class="font-semibold text-lg mb-2">Workflow Improvement</h3>
+          <p class="text-sm text-slate-600">
+            Reduce repeated work, improve handoffs, and remove inefficiencies from day-to-day operations.
+          </p>
+        </div>
 
-    <div>
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        Reduce Manual Work. Improve Efficiency. Prepare for AI.
-      </h1>
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <h3 class="font-semibold text-lg mb-2">System Organization</h3>
+          <p class="text-sm text-slate-600">
+            Create better structure across documents, information flow, and operational coordination.
+          </p>
+        </div>
 
-      <p class="text-lg text-blue-100 mb-6 max-w-2xl">
-        We help professional service businesses with workflow-heavy operations reduce manual work, improve coordination, and prepare their systems for automation and AI.
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <h3 class="font-semibold text-lg mb-2">AI Readiness</h3>
+          <p class="text-sm text-slate-600">
+            Build a stronger foundation before investing further in automation and AI tools.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="bg-slate-300 border-y border-slate-400 py-14 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="max-w-3xl mb-8">
+        <p class="text-sm font-semibold uppercase tracking-wide text-blue-800 mb-2">
+          Process
+        </p>
+        <h2 class="text-3xl font-bold mb-3">How Cirrobound Works</h2>
+        <p class="text-slate-700">
+          A simple, practical process focused on identifying inefficiencies, improving workflow clarity, and helping you prioritize the right next steps.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <div class="text-blue-800 font-semibold text-sm uppercase mb-2">Step 1</div>
+          <h3 class="font-semibold text-lg mb-2">Review</h3>
+          <p class="text-sm text-slate-600">
+            We look at how your systems, workflows, and coordination currently operate.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <div class="text-blue-800 font-semibold text-sm uppercase mb-2">Step 2</div>
+          <h3 class="font-semibold text-lg mb-2">Identify</h3>
+          <p class="text-sm text-slate-600">
+            We pinpoint where time is being lost, work is being repeated, or handoffs are slowing the business down.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <div class="text-blue-800 font-semibold text-sm uppercase mb-2">Step 3</div>
+          <h3 class="font-semibold text-lg mb-2">Improve</h3>
+          <p class="text-sm text-slate-600">
+            You get practical recommendations to reduce friction and prepare for automation or AI.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY Cirrobound -->
+  <section class="py-14 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="max-w-3xl mb-8">
+        <p class="text-sm font-semibold uppercase tracking-wide text-blue-800 mb-2">
+          Why Cirrobound
+        </p>
+        <h2 class="text-3xl font-bold mb-3">A Practical Approach to Modernization</h2>
+        <p class="text-slate-700">
+          Most businesses do not need more software first. They need clearer systems, better workflows, and stronger operational visibility.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <h3 class="font-semibold text-lg mb-2">Practical First</h3>
+          <p class="text-sm text-slate-600">
+            We focus on measurable operational improvement instead of hype.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <h3 class="font-semibold text-lg mb-2">Low-Risk Approach</h3>
+          <p class="text-sm text-slate-600">
+            The goal is to improve how the business runs without unnecessary disruption.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <h3 class="font-semibold text-lg mb-2">Workflow-Heavy Expertise</h3>
+          <p class="text-sm text-slate-600">
+            Built for businesses where documentation, coordination, and delivery depend on strong process.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CASE EXAMPLE -->
+  <section id="example" class="bg-slate-300 border-y border-slate-400 py-14 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="max-w-3xl mb-8">
+        <p class="text-sm font-semibold uppercase tracking-wide text-blue-800 mb-2">
+          Example
+        </p>
+        <h2 class="text-3xl font-bold mb-3">What This Looks Like in Practice</h2>
+        <p class="text-slate-700">
+          A typical engagement starts by understanding where time is being lost, then improving the underlying structure before introducing automation.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-300 shadow-sm p-6 transition hover:shadow-lg">
+        <div class="grid lg:grid-cols-3 gap-6">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-blue-800 mb-2">Situation</p>
+            <h3 class="text-xl font-semibold mb-3">Engineering firm with too much manual coordination</h3>
+            <p class="text-sm text-slate-600">
+              Project information lived across multiple folders, email threads, and handoff points. Staff spent too much time tracking files and follow-up instead of moving work forward.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-blue-800 mb-2">What gets improved</p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>• Centralize documentation</li>
+              <li>• Clarify workflow steps and ownership</li>
+              <li>• Reduce repeated coordination tasks</li>
+              <li>• Create better readiness for future automation</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-blue-800 mb-2">Expected result</p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>• Less time lost to searching and follow-up</li>
+              <li>• Faster project movement</li>
+              <li>• Better operational visibility</li>
+              <li>• Stronger readiness for automation and AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHO THIS IS FOR -->
+  <section id="fit" class="py-14 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="max-w-3xl mb-8">
+        <p class="text-sm font-semibold uppercase tracking-wide text-blue-800 mb-2">
+          Fit
+        </p>
+        <h2 class="text-3xl font-bold mb-3">Who This Is For</h2>
+        <p class="text-slate-700">
+          Cirrobound is a strong fit for professional businesses that rely on documentation, coordination, repeatable workflows, and expensive human time.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <h3 class="font-semibold text-lg mb-3">Good Fit</h3>
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>• Engineering firms managing revisions, files, approvals, and handoffs</li>
+            <li>• Professional businesses with admin-heavy or document-heavy workflows</li>
+            <li>• Teams losing time to searching, follow-up, and repeated coordination</li>
+            <li>• Businesses exploring automation or AI but unsure where to start</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm transition hover:shadow-lg hover:-translate-y-1">
+          <h3 class="font-semibold text-lg mb-3">Not the Best Fit</h3>
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>• Businesses already highly automated with strong internal systems</li>
+            <li>• Buyers only looking for a quick AI tool recommendation</li>
+            <li>• Teams unwilling to improve workflows before buying software</li>
+            <li>• Organizations expecting results without operational change</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STRONG CTA -->
+  <section class="bg-gradient-to-r from-blue-800 to-blue-700 text-white py-14 reveal">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h2 class="text-3xl font-bold mb-3">
+        Get a Clear Plan Before You Invest in More Tools
+      </h2>
+
+      <p class="text-blue-100 max-w-2xl mx-auto mb-6">
+        When workflows are structured correctly, businesses spend less time on admin, reduce avoidable cost, and become far easier to automate.
       </p>
 
-      <div class="flex gap-3 flex-col sm:flex-row">
-        <a href="#audit" class="bg-white text-blue-700 px-5 py-3 rounded-lg hover:bg-blue-50 transition hover:scale-[1.02] text-center">
-          Book Your AI Readiness Audit
-        </a>
-        <a href="#example" class="border border-white/40 px-5 py-3 rounded-lg hover:bg-white/10 text-center">
-          See Example
-        </a>
-      </div>
+      <a
+        href="#audit"
+        class="inline-block bg-white text-blue-700 px-5 py-3 rounded-lg font-medium transition hover:bg-blue-50 hover:scale-[1.02]"
+      >
+        Book Your AI Readiness Audit
+      </a>
 
       <p class="text-sm text-blue-100 mt-3">
         15 minutes • No obligation • Clear next steps
       </p>
-    </div>
 
-    <div>
-      <div class="bg-white p-3 rounded-xl shadow-md">
-        <img src="assets/hero.jpg" class="rounded-lg w-full h-[240px] object-cover"/>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-14 reveal">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div class="max-w-3xl mb-8">
+        <p class="text-sm font-semibold uppercase tracking-wide text-blue-800 mb-2">
+          FAQ
+        </p>
+        <h2 class="text-3xl font-bold mb-3">Questions We Hear Often</h2>
       </div>
 
-      <!-- PREMIUM METRICS -->
-      <div class="grid grid-cols-3 gap-2 mt-3">
-
-        <div class="bg-white p-4 rounded border hover:shadow-md transition">
-          <div class="text-xs uppercase text-slate-500 mb-2">Cost</div>
-          <div class="flex items-center gap-2 mb-2">
-            <span class="font-bold text-lg">↓</span>
-            <span class="font-semibold">Lower overhead</span>
-          </div>
-          <p class="text-xs text-slate-600">
-            Reduce wasted effort in admin and coordination.
+      <div class="space-y-4">
+        <div class="bg-white p-5 rounded-2xl border border-slate-300 transition hover:shadow-md">
+          <h3 class="font-semibold mb-2">Do we need to already be using AI?</h3>
+          <p class="text-sm text-slate-600">
+            No. Most businesses start by improving systems and workflows first.
           </p>
         </div>
 
-        <div class="bg-white p-4 rounded border hover:shadow-md transition">
-          <div class="text-xs uppercase text-slate-500 mb-2">Time</div>
-          <div class="flex items-center gap-2 mb-2">
-            <span class="font-bold text-lg">↓</span>
-            <span class="font-semibold">Faster execution</span>
-          </div>
-          <p class="text-xs text-slate-600">
-            Spend less time chasing information and repeating tasks.
+        <div class="bg-white p-5 rounded-2xl border border-slate-300 transition hover:shadow-md">
+          <h3 class="font-semibold mb-2">What happens on the audit call?</h3>
+          <p class="text-sm text-slate-600">
+            We review your current setup, identify inefficiencies, and show you what likely needs to improve first.
           </p>
         </div>
 
-        <div class="bg-white p-4 rounded border hover:shadow-md transition">
-          <div class="text-xs uppercase text-slate-500 mb-2">Clarity</div>
-          <div class="flex items-center gap-2 mb-2">
-            <span class="font-bold text-lg">↑</span>
-            <span class="font-semibold">Better visibility</span>
-          </div>
-          <p class="text-xs text-slate-600">
-            Improve workflow clarity and operational control.
+        <div class="bg-white p-5 rounded-2xl border border-slate-300 transition hover:shadow-md">
+          <h3 class="font-semibold mb-2">How long does improvement usually take?</h3>
+          <p class="text-sm text-slate-600">
+            That depends on your current setup, but the first step is always identifying the highest-value improvements.
           </p>
         </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="py-12 reveal">
-  <div class="max-w-6xl mx-auto px-6">
-
-    <h2 class="text-2xl font-bold mb-2">How Cirrobound Works</h2>
-    <p class="text-slate-700 max-w-3xl mb-8">
-      A simple, practical process focused on identifying inefficiencies and improving how your business operates.
-    </p>
-
-    <div class="grid md:grid-cols-3 gap-6">
-
-      <div class="bg-white p-6 rounded-xl border shadow-sm hover:shadow-lg transition">
-        <div class="text-blue-700 font-semibold mb-2 text-sm uppercase">Step 1</div>
-        <h3 class="font-semibold mb-2">Review</h3>
-        <p class="text-sm text-slate-600">We analyze your current systems and workflows.</p>
-      </div>
-
-      <div class="bg-white p-6 rounded-xl border shadow-sm hover:shadow-lg transition">
-        <div class="text-blue-700 font-semibold mb-2 text-sm uppercase">Step 2</div>
-        <h3 class="font-semibold mb-2">Identify</h3>
-        <p class="text-sm text-slate-600">We find inefficiencies and friction points.</p>
-      </div>
-
-      <div class="bg-white p-6 rounded-xl border shadow-sm hover:shadow-lg transition">
-        <div class="text-blue-700 font-semibold mb-2 text-sm uppercase">Step 3</div>
-        <h3 class="font-semibold mb-2">Improve</h3>
-        <p class="text-sm text-slate-600">You get clear, practical recommendations.</p>
       </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- BOOK -->
+  <section id="audit" class="bg-blue-700 text-white py-14 reveal">
+    <div class="max-w-5xl mx-auto px-6 text-center">
 
-<!-- CASE EXAMPLE -->
-<section id="example" class="py-12 reveal">
-  <div class="max-w-7xl mx-auto px-6">
-
-    <h2 class="text-2xl font-bold mb-6">Example Outcome</h2>
-
-    <div class="bg-white p-6 rounded-xl border shadow-sm">
-
-      <h3 class="font-semibold mb-2">Engineering firm with workflow inefficiencies</h3>
-
-      <p class="text-sm text-slate-600 mb-4">
-        Disconnected files, manual coordination, and heavy reliance on email slowed operations.
+      <h2 class="text-3xl font-bold mb-3">Book Your Audit</h2>
+      <p class="text-blue-100 max-w-2xl mx-auto mb-6">
+        Get clarity on what to fix first, where time is being lost, and what should improve before you invest further.
       </p>
 
-      <ul class="text-sm text-slate-600 space-y-2">
-        <li>• Centralized documentation</li>
-        <li>• Reduced repeated coordination</li>
-        <li>• Improved workflow clarity</li>
-        <li>• Prepared systems for automation</li>
-      </ul>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-xl">
+        <iframe
+          src="https://calendly.com/taylor-wall-Cirrobound/checkin"
+          width="100%"
+          height="650"
+          title="Book Audit"
+          class="border-0"
+        ></iframe>
+      </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- FOOTER -->
+  <footer class="bg-slate-100 border-t border-slate-300 py-5 text-center text-sm text-slate-600">
+    © 2026 Cirrobound Solutions
+  </footer>
 
-<!-- CTA -->
-<section class="bg-blue-700 text-white py-12 reveal text-center">
-  <div class="max-w-4xl mx-auto px-6">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
 
-    <h2 class="text-3xl font-bold mb-3">
-      Get a Clear Plan Before You Invest in More Tools
-    </h2>
-
-    <p class="text-blue-100 mb-6">
-      When workflows are structured correctly, businesses spend less time on admin, reduce avoidable cost, and become far easier to automate.
-    </p>
-
-    <a href="#audit" class="bg-white text-blue-700 px-5 py-3 rounded-lg hover:bg-blue-50 transition">
-      Book Your AI Readiness Audit
-    </a>
-
-  </div>
-</section>
-
-<!-- BOOK -->
-<section id="audit" class="py-12 reveal text-center">
-  <div class="max-w-5xl mx-auto px-6">
-
-    <div class="bg-white rounded-xl shadow border overflow-hidden">
-      <iframe src="https://calendly.com/taylor-wall-Cirrobound/checkin" width="100%" height="600"></iframe>
-    </div>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-slate-100 py-5 text-center text-sm text-slate-600">
-  © 2026 Cirrobound Solutions
-</footer>
-
-<script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
+      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
     });
-  }, { threshold: 0.12 });
-
-  document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-</script>
+  </script>
 
 </body>
 </html>
