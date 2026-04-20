@@ -30,39 +30,72 @@
 
 <body class="bg-slate-200 text-slate-900">
 
-  <!-- NAV -->
-  <nav class="sticky top-0 z-50 bg-slate-100/95 backdrop-blur border-b border-slate-300">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50">
+    <nav class="border-b border-slate-300/80 bg-slate-100/90 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
 
-      <div class="flex items-center gap-3">
-        <img
-          src="assets/logo.png"
-          alt="Cirrobound Solutions"
-          class="h-14 w-auto"
-        />
-        <div class="leading-tight">
-          <div class="font-semibold text-lg text-slate-900">Cirrobound</div>
-          <div class="text-xs text-slate-600">Solutions</div>
+          <!-- BRAND -->
+          <a href="#" class="flex items-center gap-4 group transition">
+            <div class="flex items-center justify-center rounded-2xl bg-white border border-slate-200 shadow-sm px-3 py-2 transition group-hover:shadow-md">
+              <img
+                src="assets/logo.png"
+                alt="Cirrobound"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+
+            <div class="flex flex-col leading-none">
+              <span class="text-[1.4rem] font-semibold tracking-tight text-blue-800">
+                Cirrobound
+              </span>
+              <span class="mt-1 text-[11px] uppercase tracking-[0.22em] text-slate-500">
+                Solutions
+              </span>
+            </div>
+          </a>
+
+          <!-- NAV LINKS -->
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="#services" class="text-sm font-medium text-slate-700 transition hover:text-blue-700">
+              Services
+            </a>
+            <a href="#how" class="text-sm font-medium text-slate-700 transition hover:text-blue-700">
+              Process
+            </a>
+            <a href="#example" class="text-sm font-medium text-slate-700 transition hover:text-blue-700">
+              Example
+            </a>
+            <a href="#fit" class="text-sm font-medium text-slate-700 transition hover:text-blue-700">
+              Fit
+            </a>
+            <a href="#faq" class="text-sm font-medium text-slate-700 transition hover:text-blue-700">
+              FAQ
+            </a>
+          </div>
+
+          <!-- RIGHT CTA -->
+          <div class="flex items-center gap-3">
+            <a
+              href="#audit"
+              class="hidden sm:inline-flex text-sm font-medium text-slate-700 transition hover:text-blue-700"
+            >
+              Schedule
+            </a>
+
+            <a
+              href="#audit"
+              class="inline-flex items-center justify-center rounded-xl bg-blue-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-800 hover:shadow-md"
+            >
+              Book Audit
+            </a>
+          </div>
+
         </div>
       </div>
-
-      <div class="hidden md:flex items-center gap-6 text-sm text-slate-700">
-        <a href="#services" class="transition hover:text-blue-700">Services</a>
-        <a href="#how" class="transition hover:text-blue-700">How It Works</a>
-        <a href="#example" class="transition hover:text-blue-700">Example</a>
-        <a href="#fit" class="transition hover:text-blue-700">Who It’s For</a>
-        <a href="#faq" class="transition hover:text-blue-700">FAQ</a>
-      </div>
-
-      <a
-        href="#audit"
-        class="bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition hover:bg-blue-800 hover:scale-[1.03]"
-      >
-        Book Audit
-      </a>
-
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- HERO -->
   <section class="bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 text-white reveal">
@@ -172,7 +205,7 @@
         </p>
         <h2 class="text-3xl font-bold mb-3">What We Help Improve</h2>
         <p class="text-slate-700">
-          We focus on the operational problems that create friction, slow down delivery, and make automation harder than it should be.
+          We focus on the operational problems that create friction, slow delivery, and make automation harder than it should be.
         </p>
       </div>
 
