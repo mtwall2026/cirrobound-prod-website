@@ -5,231 +5,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cirrobound Solutions | AI Readiness</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef4ff',
+              100: '#dbe8ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(15, 23, 42, 0.08)',
+            glow: '0 12px 40px rgba(37, 99, 235, 0.18)'
+          },
+          borderRadius: {
+            '2xl': '1.25rem',
+            '3xl': '1.75rem'
+          }
+        }
+      }
+    }
+  </script>
 </head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <div class="absolute inset-x-0 top-0 -z-10 overflow-hidden">
+    <div class="mx-auto h-[420px] w-[900px] rounded-full bg-brand-100 blur-3xl opacity-70"></div>
+  </div>
 
-<body class="bg-slate-950 text-slate-100">
-
-  <!-- NAV -->
-  <nav class="bg-slate-900 border-b border-white/10">
-    <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-
+  <nav class="sticky top-0 z-20 backdrop-blur bg-white/85 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
       <div class="flex items-center">
-        <img
-          src="assets/logo.png"
-          alt="Cirrobound Solutions"
-          class="h-16 w-auto"
-        />
+        <img src="assets/logo.png" alt="Cirrobound Solutions" class="h-16 w-auto" />
       </div>
 
       <div class="flex items-center gap-8">
-        <div class="hidden md:flex items-center gap-8 text-sm text-slate-300">
-          <a href="#services" class="hover:text-white transition">Services</a>
-          <a href="#process" class="hover:text-white transition">Process</a>
-          <a href="#faq" class="hover:text-white transition">FAQ</a>
+        <div class="hidden md:flex gap-8 text-sm text-slate-600">
+          <a href="#services" class="hover:text-slate-900 transition">Services</a>
+          <a href="#process" class="hover:text-slate-900 transition">Process</a>
+          <a href="#faq" class="hover:text-slate-900 transition">FAQ</a>
         </div>
-
-        <a
-          href="#audit"
-          class="bg-blue-600 text-white px-5 py-2.5 rounded-xl font-medium hover:bg-blue-700 transition"
-        >
+        <a href="#audit" class="inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-5 py-2.5 font-medium hover:bg-brand-700 transition shadow-glow">
           Book Audit
         </a>
       </div>
-
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="bg-gradient-to-br from-slate-900 to-slate-800 text-white">
-    <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
-
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-24 grid lg:grid-cols-2 gap-14 items-center">
       <div>
-        <div class="inline-block bg-white/10 text-white px-4 py-2 rounded-full text-sm mb-6">
+        <div class="inline-flex items-center gap-2 rounded-full bg-white border border-slate-200 px-4 py-2 text-sm text-slate-600 shadow-soft mb-6">
+          <span class="h-2 w-2 rounded-full bg-brand-500"></span>
           Cloud readiness • workflow improvement • AI preparation
         </div>
 
-        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-          Reduce Manual Work, Improve Efficiency, and Get Your Business Ready for AI
+        <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05] mb-6">
+          Reduce Manual Work. Improve Efficiency. Prepare for AI.
         </h1>
 
-        <p class="text-lg text-slate-300 mb-8">
-          We help businesses streamline workflows, reduce unnecessary cost,
-          and prepare their systems so automation and AI actually work.
+        <p class="text-lg md:text-xl text-slate-600 max-w-2xl mb-8 leading-relaxed">
+          Cirrobound helps professional businesses streamline workflows, reduce avoidable cost, and build systems that actually support automation.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 mb-4">
-          <a
-            href="#audit"
-            class="bg-blue-600 text-white px-6 py-4 rounded-xl font-medium hover:bg-blue-700 transition"
-          >
-            Book Free AI Audit
+        <div class="flex flex-col sm:flex-row gap-4 mb-5">
+          <a href="#audit" class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-4 text-white font-medium text-lg hover:bg-brand-700 transition shadow-glow">
+            Book Free Audit
           </a>
-
-          <a
-            href="#process"
-            class="border border-white/20 px-6 py-4 rounded-xl font-medium hover:bg-white/10 transition"
-          >
+          <a href="#process" class="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-4 text-slate-900 font-medium text-lg hover:bg-slate-100 transition shadow-soft">
             See How It Works
           </a>
         </div>
 
-        <div class="text-sm text-slate-400 flex flex-wrap gap-6">
+        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
           <span>15 minutes</span>
           <span>No obligation</span>
           <span>Clear next steps</span>
         </div>
       </div>
 
-      <div>
-        <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-          <img
-            src="assets/hero.jpg"
-            alt="Workflow efficiency and system optimization"
-            class="w-full h-[260px] object-cover opacity-90"
-          />
-          <div class="absolute inset-0 bg-black/20"></div>
+      <div class="relative">
+        <div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-brand-100 to-slate-200 blur-2xl opacity-80"></div>
+        <div class="relative rounded-3xl bg-white border border-slate-200 p-5 shadow-soft">
+          <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100">
+            <img src="assets/hero.jpg" alt="Workflow efficiency and system optimization" class="w-full h-[320px] object-cover" />
+          </div>
+          <div class="grid grid-cols-3 gap-3 mt-5">
+            <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4 text-center">
+              <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Cost</div>
+              <div class="text-xl font-semibold text-slate-900">↓</div>
+            </div>
+            <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4 text-center">
+              <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Work Time</div>
+              <div class="text-xl font-semibold text-slate-900">↓</div>
+            </div>
+            <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4 text-center">
+              <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">Clarity</div>
+              <div class="text-xl font-semibold text-slate-900">↑</div>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 mt-4">
+            Better systems reduce friction, shorten work cycles, and improve execution.
+          </p>
         </div>
-
-        <p class="text-sm text-slate-400 mt-3">
-          Clear systems reduce cost, remove friction, and improve execution speed.
-        </p>
       </div>
-
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section id="services" class="bg-white text-slate-900 py-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-
-      <h2 class="text-3xl font-semibold mb-12">
-        What We Help Improve
-      </h2>
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <p class="text-sm font-medium uppercase tracking-[0.2em] text-brand-600 mb-4">What we improve</p>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4">Practical improvements that make automation possible</h2>
+        <p class="text-lg text-slate-600">We focus on the operational issues that create waste, slow teams down, and make new tools harder to use.</p>
+      </div>
 
       <div class="grid md:grid-cols-3 gap-6">
-
-        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm">
-          <h3 class="font-semibold mb-2">Cloud Readiness</h3>
-          <p class="text-slate-600 text-sm">
-            Organize and modernize your systems for accessibility and control.
-          </p>
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-2xl mb-4">☁️</div>
+          <h3 class="text-xl font-semibold mb-3">Cloud Readiness</h3>
+          <p class="text-slate-600 leading-relaxed">Organize systems for accessibility, security, and better control across your business.</p>
         </div>
-
-        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm">
-          <h3 class="font-semibold mb-2">Workflow Improvement</h3>
-          <p class="text-slate-600 text-sm">
-            Reduce manual work and eliminate inefficiencies in daily operations.
-          </p>
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-2xl mb-4">⚙️</div>
+          <h3 class="text-xl font-semibold mb-3">Workflow Improvement</h3>
+          <p class="text-slate-600 leading-relaxed">Reduce manual work, improve handoffs, and eliminate unnecessary friction in daily operations.</p>
         </div>
-
-        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm">
-          <h3 class="font-semibold mb-2">AI Preparation</h3>
-          <p class="text-slate-600 text-sm">
-            Build the right foundation before implementing automation or AI.
-          </p>
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-2xl mb-4">🤖</div>
+          <h3 class="text-xl font-semibold mb-3">AI Preparation</h3>
+          <p class="text-slate-600 leading-relaxed">Build the right foundation before investing in automation or AI tools.</p>
         </div>
-
       </div>
-
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <section id="process" class="bg-slate-100 text-slate-900 py-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-
-      <h2 class="text-3xl font-semibold mb-12">
-        How It Works
-      </h2>
-
-      <div class="grid md:grid-cols-4 gap-6 text-sm">
-
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-          Review systems
-        </div>
-
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-          Identify inefficiencies
-        </div>
-
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-          Map improvements
-        </div>
-
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-          Implement changes
-        </div>
-
+  <section id="process" class="py-20 bg-slate-100/80 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <p class="text-sm font-medium uppercase tracking-[0.2em] text-brand-600 mb-4">Process</p>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4">A simple path from friction to clarity</h2>
+        <p class="text-lg text-slate-600">The goal is not to overwhelm you. The goal is to show what should improve first.</p>
       </div>
 
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-medium text-brand-600 mb-3">Step 1</div>
+          <h3 class="font-semibold mb-2">Review</h3>
+          <p class="text-slate-600 text-sm">Understand how your systems and workflows work today.</p>
+        </div>
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-medium text-brand-600 mb-3">Step 2</div>
+          <h3 class="font-semibold mb-2">Identify</h3>
+          <p class="text-slate-600 text-sm">Find inefficiencies, bottlenecks, and unnecessary manual work.</p>
+        </div>
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-medium text-brand-600 mb-3">Step 3</div>
+          <h3 class="font-semibold mb-2">Improve</h3>
+          <p class="text-slate-600 text-sm">Map the highest-value improvements before adding complexity.</p>
+        </div>
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-medium text-brand-600 mb-3">Step 4</div>
+          <h3 class="font-semibold mb-2">Implement</h3>
+          <p class="text-slate-600 text-sm">Apply changes that support smoother operations and future automation.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="bg-white text-slate-900 py-20">
-    <div class="max-w-4xl mx-auto px-6">
-
-      <h2 class="text-3xl font-semibold text-center mb-12">
-        Frequently Asked Questions
-      </h2>
+  <section id="faq" class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <p class="text-sm font-medium uppercase tracking-[0.2em] text-brand-600 mb-4">FAQ</p>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4">Questions we hear often</h2>
+      </div>
 
       <div class="space-y-6">
-
-        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm">
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft">
           <h3 class="font-semibold mb-2">Do we need to already be using AI?</h3>
-          <p class="text-slate-600 text-sm">
-            No. Most businesses start by improving systems and workflows first.
-          </p>
+          <p class="text-slate-600">No. Most businesses start by improving systems and workflows first.</p>
         </div>
-
-        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm">
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft">
           <h3 class="font-semibold mb-2">What happens on the audit call?</h3>
-          <p class="text-slate-600 text-sm">
-            We review your current setup, identify bottlenecks, and show you what to improve first.
-          </p>
+          <p class="text-slate-600">We review your current setup, identify bottlenecks, and show you what to improve first.</p>
         </div>
-
-        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm">
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft">
           <h3 class="font-semibold mb-2">Who is this for?</h3>
-          <p class="text-slate-600 text-sm">
-            Professional businesses looking to reduce friction, improve operations, and prepare for automation or AI.
-          </p>
+          <p class="text-slate-600">Professional businesses looking to reduce friction, improve operations, and prepare for automation or AI.</p>
         </div>
-
       </div>
-
     </div>
   </section>
 
-  <!-- BOOKING -->
-  <section id="audit" class="bg-slate-100 text-slate-900 py-20">
-    <div class="max-w-4xl mx-auto px-6 text-center">
+  <section id="audit" class="py-20 bg-gradient-to-br from-slate-100 to-slate-50 border-t border-slate-200">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold mb-4">Book Your Audit</h2>
+      <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">Get clarity on what to fix first and where you can reduce cost and manual work.</p>
 
-      <h2 class="text-3xl font-semibold mb-4">
-        Book Your AI Readiness Audit
-      </h2>
-
-      <p class="text-slate-600 mb-6">
-        Get a clear understanding of where your business stands and what to improve first.
-      </p>
-
-      <div class="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
+      <div class="bg-white rounded-3xl shadow-soft border border-slate-200 overflow-hidden">
         <iframe
           src="https://calendly.com/YOUR-LINK"
           width="100%"
-          height="600"
-          class="border-0"
+          height="650"
+          class="border-0 bg-white"
           title="Book Audit"
         ></iframe>
       </div>
-
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-slate-900 border-t border-white/10 py-8 text-center text-slate-400 text-sm">
+  <footer class="bg-white border-t border-slate-200 py-8 text-center text-slate-500 text-sm">
     © 2026 Cirrobound Solutions
   </footer>
-
 </body>
 </html>
