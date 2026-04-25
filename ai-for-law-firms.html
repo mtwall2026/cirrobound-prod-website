@@ -4,84 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI for Law Firms | Cirrobound</title>
-  <meta name="description" content="AI consulting for law firms to improve intake, reduce document review time, streamline case workflows, and prepare for secure automation." />
+  <meta name="description" content="Improve law firm intake, reduce document review time, organize case workflows, and prepare for secure AI adoption." />
   <link href="./output.css" rel="stylesheet">
 </head>
 
 <body class="bg-slate-50 text-slate-900">
 
+<!-- HEADER -->
+<header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <a href="/" class="flex items-center gap-3">
+      <img src="assets/logo.png" alt="Cirrobound Solutions" class="h-10 w-auto">
+      <span class="font-semibold text-lg">Cirrobound</span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
+      <a href="/" class="hover:text-blue-700">Home</a>
+      <a href="/services.html" class="hover:text-blue-700">Services</a>
+      <a href="/ai-for-law-firms.html" class="hover:text-blue-700">Law Firm AI</a>
+      <a href="/ai-for-engineering.html" class="hover:text-blue-700">Engineering AI</a>
+      <a href="/#faq" class="hover:text-blue-700">FAQ</a>
+    </nav>
+
+    <button id="menuBtn" class="lg:hidden flex flex-col gap-1">
+      <span class="w-6 h-0.5 bg-slate-800"></span>
+      <span class="w-6 h-0.5 bg-slate-800"></span>
+      <span class="w-6 h-0.5 bg-slate-800"></span>
+    </button>
+
+  </div>
+
+  <div id="mobileMenu" class="hidden lg:hidden px-6 pb-4 space-y-3 text-sm font-medium text-slate-700 bg-white border-t">
+    <a href="/" class="block hover:text-blue-700">Home</a>
+    <a href="/services.html" class="block hover:text-blue-700">Services</a>
+    <a href="/ai-for-law-firms.html" class="block hover:text-blue-700">Law Firm AI</a>
+    <a href="/ai-for-engineering.html" class="block hover:text-blue-700">Engineering AI</a>
+    <a href="/#faq" class="block hover:text-blue-700">FAQ</a>
+  </div>
+</header>
+
 <!-- HERO -->
-<section class="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-24">
+<section class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20 md:py-28">
   <div class="max-w-5xl mx-auto px-6 text-center">
-    <h1 class="text-5xl font-bold mb-6 leading-tight">
+
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
       AI for Law Firms
     </h1>
-    <p class="text-xl text-blue-100 mb-4">
-      Improve intake, reduce document review time, and streamline case workflows with practical AI support.
+
+    <p class="text-lg md:text-xl text-blue-100 mb-4">
+      Improve intake, reduce document review time, and organize case workflows with practical AI support.
     </p>
-    <p class="text-blue-200 mb-8">
-      Spend less time organizing information—and more time serving clients.
+
+    <p class="text-blue-200 mb-10">
+      Spend less time collecting information—and more time serving clients.
     </p>
-    <a href="/#audit" class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg transition">
+
+    <a href="https://calendly.com/taylor-wall-Cirrobound/checkin"
+       class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg transition">
       Book a Consultation
     </a>
+
   </div>
 </section>
 
 <!-- PROBLEM -->
-<section class="py-20">
+<section class="py-16 md:py-20">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-10">
       Where Law Firms Lose Time
     </h2>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-8 rounded-2xl shadow">
-        Intake details are collected across calls, forms, emails, and notes.
+      <div class="bg-white p-6 rounded-2xl shadow">
+        Intake information is collected across calls, forms, emails, and notes
       </div>
-      <div class="bg-white p-8 rounded-2xl shadow">
-        Document review takes valuable time before legal work can begin.
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        Document review takes valuable time before legal work can begin
       </div>
-      <div class="bg-white p-8 rounded-2xl shadow">
-        Case information can become scattered across systems and staff.
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        Case details, deadlines, and handoffs become scattered across systems
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- VALUE -->
-<section class="bg-white py-20 border-t">
+<section class="bg-white py-16 md:py-20 border-t">
   <div class="max-w-6xl mx-auto px-6">
 
-    <h2 class="text-3xl font-bold mb-12 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-10 text-center">
       Better Intake. Faster Review. Cleaner Case Flow.
     </h2>
 
-    <div class="grid md:grid-cols-2 gap-10">
+    <div class="grid md:grid-cols-2 gap-8">
 
       <div>
-        <h3 class="text-xl font-semibold mb-3">Streamline Client Intake</h3>
+        <h3 class="font-semibold mb-2">Streamline Client Intake</h3>
         <p class="text-slate-600">
-          Turn intake responses, forms, and call notes into structured summaries so your team can understand the matter faster.
+          Turn intake responses, call notes, and form submissions into structured summaries your team can review faster.
         </p>
       </div>
 
       <div>
-        <h3 class="text-xl font-semibold mb-3">Reduce Document Review Time</h3>
+        <h3 class="font-semibold mb-2">Reduce Document Review Time</h3>
         <p class="text-slate-600">
           Use AI-assisted workflows to summarize documents, surface key dates, and identify important terms or risk areas.
         </p>
       </div>
 
       <div>
-        <h3 class="text-xl font-semibold mb-3">Improve Case Organization</h3>
+        <h3 class="font-semibold mb-2">Improve Case Organization</h3>
         <p class="text-slate-600">
-          Create clearer workflows for organizing documents, client details, deadlines, and internal handoffs.
+          Create clearer workflows for documents, client details, deadlines, and internal handoffs.
         </p>
       </div>
 
       <div>
-        <h3 class="text-xl font-semibold mb-3">Protect Sensitive Information</h3>
+        <h3 class="font-semibold mb-2">Support Secure AI Adoption</h3>
         <p class="text-slate-600">
           Build AI workflows with governance, access control, and data handling practices that respect confidentiality.
         </p>
@@ -92,31 +136,54 @@
 </section>
 
 <!-- APPROACH -->
-<section class="py-20">
+<section class="py-16 md:py-20">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6">
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">
       A Practical, Low-Risk Approach
     </h2>
-    <p class="text-lg text-slate-600">
-      We don’t start by forcing new tools into your firm. We review how intake, documents, deadlines, and communication currently move through your practice—then identify where structure, automation, and AI can reduce friction safely.
+
+    <p class="text-slate-600 text-lg">
+      We start by reviewing how intake, documents, deadlines, and communication move through your firm—then identify where structure, automation, and AI can reduce friction without disrupting operations.
     </p>
+
   </div>
 </section>
 
 <!-- CTA -->
-<section class="bg-blue-700 text-white py-20 text-center">
+<section class="bg-blue-700 text-white py-16 md:py-20 text-center">
   <div class="max-w-3xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-4">
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">
       Build a Smarter Path to AI Adoption
     </h2>
-    <p class="mb-8 text-blue-100">
-      Get a clear plan for reducing manual work and improving firm workflows before investing in more tools.
+
+    <p class="mb-6 text-blue-100">
+      Get a practical plan to reduce manual work and improve firm workflows before investing in more tools.
     </p>
-    <a href="/#audit" class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow">
+
+    <a href="https://calendly.com/taylor-wall-Cirrobound/checkin"
+       class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow">
       Book Your AI Readiness Audit
     </a>
+
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+  © 2026 Cirrobound Solutions
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
 
 </body>
 </html>

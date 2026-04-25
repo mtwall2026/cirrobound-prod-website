@@ -4,86 +4,130 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI for Engineering Workflows | Cirrobound</title>
-  <meta name="description" content="Improve engineering workflows, speed up design cycles, and reduce coordination overhead." />
+  <meta name="description" content="Improve engineering workflows, speed up design cycles, and reduce coordination overhead with practical AI solutions." />
   <link href="./output.css" rel="stylesheet">
 </head>
 
 <body class="bg-slate-50 text-slate-900">
 
+<!-- HEADER -->
+<header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <a href="/" class="flex items-center gap-3">
+      <img src="assets/logo.png" alt="Cirrobound Solutions" class="h-10 w-auto">
+      <span class="font-semibold text-lg">Cirrobound</span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
+      <a href="/" class="hover:text-blue-700">Home</a>
+      <a href="/services.html" class="hover:text-blue-700">Services</a>
+      <a href="/ai-for-law-firms.html" class="hover:text-blue-700">Law Firm AI</a>
+      <a href="/ai-for-engineering.html" class="hover:text-blue-700">Engineering AI</a>
+      <a href="/#faq" class="hover:text-blue-700">FAQ</a>
+    </nav>
+
+    <button id="menuBtn" class="lg:hidden flex flex-col gap-1">
+      <span class="w-6 h-0.5 bg-slate-800"></span>
+      <span class="w-6 h-0.5 bg-slate-800"></span>
+      <span class="w-6 h-0.5 bg-slate-800"></span>
+    </button>
+
+  </div>
+
+  <div id="mobileMenu" class="hidden lg:hidden px-6 pb-4 space-y-3 text-sm font-medium text-slate-700 bg-white border-t">
+    <a href="/" class="block hover:text-blue-700">Home</a>
+    <a href="/services.html" class="block hover:text-blue-700">Services</a>
+    <a href="/ai-for-law-firms.html" class="block hover:text-blue-700">Law Firm AI</a>
+    <a href="/ai-for-engineering.html" class="block hover:text-blue-700">Engineering AI</a>
+    <a href="/#faq" class="block hover:text-blue-700">FAQ</a>
+  </div>
+</header>
+
 <!-- HERO -->
-<section class="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-24">
+<section class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20 md:py-28">
   <div class="max-w-5xl mx-auto px-6 text-center">
-    <h1 class="text-5xl font-bold mb-6 leading-tight">
+
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
       AI for Engineering Workflows
     </h1>
-    <p class="text-xl text-blue-100 mb-4">
+
+    <p class="text-lg md:text-xl text-blue-100 mb-4">
       Improve project flow, reduce coordination overhead, and move through design cycles faster.
     </p>
-    <p class="text-blue-200 mb-8">
+
+    <p class="text-blue-200 mb-10">
       Spend less time tracking work—and more time designing.
     </p>
-    <a href="/#audit" class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg transition">
+
+    <a href="https://calendly.com/taylor-wall-Cirrobound/checkin"
+       class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg transition">
       Book a Consultation
     </a>
+
   </div>
 </section>
 
 <!-- PROBLEM -->
-<section class="py-20">
+<section class="py-16 md:py-20">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">
-      Where Engineering Time Gets Lost
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-10">
+      Where Engineering Teams Lose Time
     </h2>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-8 rounded-2xl shadow">
+      <div class="bg-white p-6 rounded-2xl shadow">
         Documents scattered across systems and emails
       </div>
-      <div class="bg-white p-8 rounded-2xl shadow">
-        RFIs and revisions require constant manual tracking
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        RFIs, revisions, and approvals require constant tracking
       </div>
-      <div class="bg-white p-8 rounded-2xl shadow">
+
+      <div class="bg-white p-6 rounded-2xl shadow">
         Too much time spent coordinating instead of designing
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- VALUE -->
-<section class="bg-white py-20 border-t">
+<section class="bg-white py-16 md:py-20 border-t">
   <div class="max-w-6xl mx-auto px-6">
 
-    <h2 class="text-3xl font-bold mb-12 text-center">
-      Faster Design. Smoother Projects.
+    <h2 class="text-2xl md:text-3xl font-bold mb-10 text-center">
+      Improve Design Speed and Project Flow
     </h2>
 
-    <div class="grid md:grid-cols-2 gap-10">
+    <div class="grid md:grid-cols-2 gap-8">
 
       <div>
-        <h3 class="text-xl font-semibold mb-3">Move Through Design Faster</h3>
+        <h3 class="font-semibold mb-2">Move Through Design Cycles Faster</h3>
         <p class="text-slate-600">
-          Quickly understand revisions, compare changes, and surface key updates without manual review cycles slowing you down.
+          Quickly understand revisions, compare changes, and surface key updates without slowing down design progress.
         </p>
       </div>
 
       <div>
-        <h3 class="text-xl font-semibold mb-3">Reduce Coordination Work</h3>
+        <h3 class="font-semibold mb-2">Reduce Coordination Overhead</h3>
         <p class="text-slate-600">
-          Eliminate repetitive follow-ups, tracking, and communication overhead that slows down project progress.
+          Streamline RFIs, approvals, and handoffs so projects move forward without constant follow-ups.
         </p>
       </div>
 
       <div>
-        <h3 class="text-xl font-semibold mb-3">Find Information Instantly</h3>
+        <h3 class="font-semibold mb-2">Find Information Faster</h3>
         <p class="text-slate-600">
-          Access the right documents, decisions, and details without digging through disconnected systems.
+          Access the right documents and decisions without digging through folders and emails.
         </p>
       </div>
 
       <div>
-        <h3 class="text-xl font-semibold mb-3">Keep Projects Moving</h3>
+        <h3 class="font-semibold mb-2">Keep Projects Moving</h3>
         <p class="text-slate-600">
-          Reduce friction between design, review, and execution so work flows forward consistently.
+          Reduce delays between design, review, and execution so work flows consistently.
         </p>
       </div>
 
@@ -92,31 +136,54 @@
 </section>
 
 <!-- APPROACH -->
-<section class="py-20">
+<section class="py-16 md:py-20">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6">
-      A Practical Approach
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">
+      A Practical Workflow-First Approach
     </h2>
-    <p class="text-lg text-slate-600">
-      We focus on your workflows first—how work moves, where delays happen, and where structure is missing. Then we apply automation and AI where it actually improves performance.
+
+    <p class="text-slate-600 text-lg">
+      We start by reviewing how your engineering team manages documents, revisions, and communication—then identify where structure, automation, and AI can reduce friction without disrupting operations.
     </p>
+
   </div>
 </section>
 
 <!-- CTA -->
-<section class="bg-blue-700 text-white py-20 text-center">
+<section class="bg-blue-700 text-white py-16 md:py-20 text-center">
   <div class="max-w-3xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-4">
-      Build a Clear Path to Better Workflows
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">
+      Build a Clearer Path to Better Workflows
     </h2>
-    <p class="mb-8 text-blue-100">
+
+    <p class="mb-6 text-blue-100">
       Get a practical plan to improve design speed and reduce coordination overhead.
     </p>
-    <a href="/#audit" class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow">
+
+    <a href="https://calendly.com/taylor-wall-Cirrobound/checkin"
+       class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow">
       Book Your AI Readiness Audit
     </a>
+
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+  © 2026 Cirrobound Solutions
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
 
 </body>
 </html>
