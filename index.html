@@ -15,24 +15,18 @@
 
     <!-- LOGO -->
     <a href="/" class="flex items-center gap-4 shrink-0">
-      
-      <img src="assets/logo.png"
-           alt="CirroBound Solutions"
+      <img src="assets/logo.png" alt="CirroBound Solutions"
            style="height:88px; width:auto; display:block;">
 
       <div style="line-height:1;">
-        <div style="font-size:28px; font-weight:800; color:#0f172a;">
-          CirroBound
-        </div>
-        <div style="font-size:15px; letter-spacing:2px; color:#2563eb;">
-          SOLUTIONS
-        </div>
+        <div style="font-size:28px; font-weight:800;">CirroBound</div>
+        <div style="font-size:15px; letter-spacing:2px; color:#2563eb;">SOLUTIONS</div>
       </div>
-
     </a>
 
-    <!-- DESKTOP NAV -->
-    <nav class="hidden lg:flex items-center text-base font-semibold text-slate-700 tracking-wide" style="gap:32px;">
+    <!-- NAV -->
+    <nav class="hidden lg:flex items-center text-base font-semibold text-slate-700"
+         style="gap:32px;">
       <a href="/" class="hover:text-blue-700 transition">Home</a>
       <a href="/services.html" class="hover:text-blue-700 transition">Services</a>
       <a href="/ai-for-law-firms.html" class="hover:text-blue-700 transition">Law Firm AI</a>
@@ -41,7 +35,7 @@
     </nav>
 
     <!-- MOBILE BUTTON -->
-    <button id="menuBtn" class="lg:hidden flex flex-col gap-1" aria-label="Open menu">
+    <button id="menuBtn" class="lg:hidden flex flex-col gap-1">
       <span class="w-6 h-0.5 bg-slate-800"></span>
       <span class="w-6 h-0.5 bg-slate-800"></span>
       <span class="w-6 h-0.5 bg-slate-800"></span>
@@ -50,22 +44,12 @@
   </div>
 
   <!-- MOBILE MENU -->
-  <div id="mobileMenu" class="hidden lg:hidden px-6 pb-6 space-y-4 text-lg font-semibold text-slate-800 bg-white border-t">
-
-    <a href="/" class="block py-3 border-b border-slate-200 hover:text-blue-700 transition">Home</a>
-
-    <a href="/services.html" class="block py-3 border-b border-slate-200 hover:text-blue-700 transition">Services</a>
-
-    <a href="/ai-for-law-firms.html" class="block py-3 border-b border-slate-200 hover:text-blue-700 transition">
-      Law Firm AI
-    </a>
-
-    <a href="/ai-for-engineering.html" class="block py-3 border-b border-slate-200 hover:text-blue-700 transition">
-      Engineering AI
-    </a>
-
-    <a href="/#faq" class="block py-3 hover:text-blue-700 transition">FAQ</a>
-
+  <div id="mobileMenu" class="hidden lg:hidden px-6 pb-6 space-y-4 text-lg font-semibold bg-white border-t">
+    <a href="/" class="block py-3 border-b">Home</a>
+    <a href="/services.html" class="block py-3 border-b">Services</a>
+    <a href="/ai-for-law-firms.html" class="block py-3 border-b">Law Firm AI</a>
+    <a href="/ai-for-engineering.html" class="block py-3 border-b">Engineering AI</a>
+    <a href="/#faq" class="block py-3">FAQ</a>
   </div>
 </header>
 
@@ -73,7 +57,7 @@
 <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20 md:py-28">
   <div class="max-w-5xl mx-auto px-6 text-center">
 
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
       Cloud and AI Solutions Built for Real Workflows
     </h1>
 
@@ -86,13 +70,13 @@
     </p>
 
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="https://outlook.office.com/book/AIReadinessAudit@cirrobound.com/" target="_blank"
-         class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg transition">
+      <a href="https://outlook.office.com/book/AIReadinessAudit@cirrobound.com/"
+         class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow">
         Book a Consultation
       </a>
 
       <a href="/services.html"
-         class="border border-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-blue-700 transition">
+         class="border border-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-blue-700">
         View Services
       </a>
     </div>
@@ -100,7 +84,64 @@
   </div>
 </section>
 
-<footer class="bg-white border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+<!-- WHAT WE HELP WITH -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">What We Help With</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">AI Readiness</h3>
+        <p class="text-sm text-slate-600">Prepare your business for practical AI adoption.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">Automation</h3>
+        <p class="text-sm text-slate-600">Reduce repetitive work and improve efficiency.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">Cloud Optimization</h3>
+        <p class="text-sm text-slate-600">Structure systems for scalability and reliability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">Who We Work With</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <a href="/ai-for-law-firms.html" class="p-8 border rounded-xl hover:shadow">
+        <h3 class="text-xl font-semibold mb-2">Law Firms</h3>
+        <p>Improve intake, documents, and case workflows.</p>
+      </a>
+
+      <a href="/ai-for-engineering.html" class="p-8 border rounded-xl hover:shadow">
+        <h3 class="text-xl font-semibold mb-2">Engineering Firms</h3>
+        <p>Streamline design, RFIs, and coordination.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-16 bg-slate-100">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-6 text-center">FAQ</h2>
+
+    <div class="space-y-4 text-sm">
+      <p><strong>Do you replace systems?</strong> No, we improve what you already use.</p>
+      <p><strong>Do we need AI experience?</strong> No, we guide you.</p>
+      <p><strong>Who is this for?</strong> Workflow-heavy businesses.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t py-6 text-center text-sm text-slate-500">
   © 2026 CirroBound Solutions
 </footer>
 
