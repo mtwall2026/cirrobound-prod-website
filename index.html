@@ -10,58 +10,69 @@
 
 <body class="bg-slate-50 text-slate-900">
 
-<header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+<header class="bg-white/95 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-    <!-- LOGO -->
     <a href="/" class="flex items-center gap-4 shrink-0">
       <img src="assets/logo.png" alt="CirroBound Solutions"
            style="height:88px; width:auto; display:block;">
 
       <div style="line-height:1;">
-        <div style="font-size:28px; font-weight:800;">CirroBound</div>
-        <div style="font-size:15px; letter-spacing:2px; color:#2563eb;">SOLUTIONS</div>
+        <div style="font-size:30px; font-weight:900; color:#0f172a; letter-spacing:-0.04em;">
+          CirroBound
+        </div>
+        <div style="font-size:15px; letter-spacing:3px; color:#2563eb; font-weight:700;">
+          SOLUTIONS
+        </div>
       </div>
     </a>
 
-    <!-- NAV -->
-    <nav class="hidden lg:flex items-center text-base font-semibold text-slate-700"
-         style="gap:32px;">
+    <nav class="hidden lg:flex items-center text-base font-semibold text-slate-700" style="gap:34px;">
       <a href="/" class="hover:text-blue-700 transition">Home</a>
       <a href="/services.html" class="hover:text-blue-700 transition">Services</a>
       <a href="/ai-for-law-firms.html" class="hover:text-blue-700 transition">Law Firm AI</a>
       <a href="/ai-for-engineering.html" class="hover:text-blue-700 transition">Engineering AI</a>
       <a href="/#faq" class="hover:text-blue-700 transition">FAQ</a>
+      <a href="https://outlook.office.com/book/AIReadinessAudit@cirrobound.com/" target="_blank"
+         class="bg-blue-700 text-white px-5 py-3 rounded-xl shadow hover:bg-blue-800 transition">
+        Book Consultation
+      </a>
     </nav>
 
-    <!-- MOBILE BUTTON -->
-    <button id="menuBtn" class="lg:hidden flex flex-col gap-1">
-      <span class="w-6 h-0.5 bg-slate-800"></span>
-      <span class="w-6 h-0.5 bg-slate-800"></span>
-      <span class="w-6 h-0.5 bg-slate-800"></span>
+    <button id="menuBtn" class="lg:hidden flex flex-col gap-1" aria-label="Open menu">
+      <span class="w-7 h-0.5 bg-slate-800"></span>
+      <span class="w-7 h-0.5 bg-slate-800"></span>
+      <span class="w-7 h-0.5 bg-slate-800"></span>
     </button>
 
   </div>
 
-  <!-- MOBILE MENU -->
   <div id="mobileMenu" class="hidden lg:hidden px-6 pb-6 space-y-4 text-lg font-semibold bg-white border-t">
-    <a href="/" class="block py-3 border-b">Home</a>
-    <a href="/services.html" class="block py-3 border-b">Services</a>
-    <a href="/ai-for-law-firms.html" class="block py-3 border-b">Law Firm AI</a>
-    <a href="/ai-for-engineering.html" class="block py-3 border-b">Engineering AI</a>
-    <a href="/#faq" class="block py-3">FAQ</a>
+    <a href="/" class="block py-3 border-b border-slate-200">Home</a>
+    <a href="/services.html" class="block py-3 border-b border-slate-200">Services</a>
+    <a href="/ai-for-law-firms.html" class="block py-3 border-b border-slate-200">Law Firm AI</a>
+    <a href="/ai-for-engineering.html" class="block py-3 border-b border-slate-200">Engineering AI</a>
+    <a href="/#faq" class="block py-3 border-b border-slate-200">FAQ</a>
+    <a href="https://outlook.office.com/book/AIReadinessAudit@cirrobound.com/" target="_blank"
+       class="block text-center bg-blue-700 text-white px-5 py-3 rounded-xl">
+      Book Consultation
+    </a>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20 md:py-28">
-  <div class="max-w-5xl mx-auto px-6 text-center">
+<section class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-blue-700 text-white py-24 md:py-32">
+  <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,#38bdf8,transparent_35%),radial-gradient(circle_at_bottom_right,#2563eb,transparent_35%)]"></div>
 
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+  <div class="relative max-w-6xl mx-auto px-6 text-center">
+    <div class="inline-flex items-center rounded-full border border-blue-300/30 bg-white/10 px-4 py-2 text-sm text-blue-100 mb-8">
+      Cloud foundation • Workflow automation • Practical AI readiness
+    </div>
+
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-7 leading-tight tracking-tight">
       Cloud and AI Solutions Built for Real Workflows
     </h1>
 
-    <p class="text-lg md:text-xl text-blue-100 mb-4">
+    <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-5">
       Reduce manual work, improve workflows, and prepare your business for practical automation and AI.
     </p>
 
@@ -70,78 +81,193 @@
     </p>
 
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="https://outlook.office.com/book/AIReadinessAudit@cirrobound.com/"
-         class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold shadow">
+      <a href="https://outlook.office.com/book/AIReadinessAudit@cirrobound.com/" target="_blank"
+         class="bg-white text-blue-800 px-7 py-4 rounded-xl font-bold shadow-xl hover:shadow-2xl transition">
         Book a Consultation
       </a>
 
       <a href="/services.html"
-         class="border border-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-blue-700">
+         class="border border-white/70 px-7 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-800 transition">
         View Services
       </a>
     </div>
-
   </div>
 </section>
 
-<!-- WHAT WE HELP WITH -->
-<section class="py-16">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">What We Help With</h2>
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <h2 class="text-3xl md:text-4xl font-black mb-4">What We Help With</h2>
+      <p class="text-slate-600 text-lg">
+        We focus on practical improvements first — stronger cloud structure, clearer workflows, and AI use cases that actually fit how your team works.
+      </p>
+    </div>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="font-semibold mb-2">AI Readiness</h3>
-        <p class="text-sm text-slate-600">Prepare your business for practical AI adoption.</p>
+      <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition">
+        <div class="text-blue-700 font-black text-sm mb-3">01</div>
+        <h3 class="text-xl font-bold mb-3">AI Readiness & Strategy</h3>
+        <p class="text-slate-600">
+          Identify where automation and AI can reduce repetitive work and improve business flow.
+        </p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="font-semibold mb-2">Automation</h3>
-        <p class="text-sm text-slate-600">Reduce repetitive work and improve efficiency.</p>
+      <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition">
+        <div class="text-blue-700 font-black text-sm mb-3">02</div>
+        <h3 class="text-xl font-bold mb-3">Workflow Automation</h3>
+        <p class="text-slate-600">
+          Reduce manual follow-ups, handoffs, document tracking, intake work, and coordination delays.
+        </p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="font-semibold mb-2">Cloud Optimization</h3>
-        <p class="text-sm text-slate-600">Structure systems for scalability and reliability.</p>
+      <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition">
+        <div class="text-blue-700 font-black text-sm mb-3">03</div>
+        <h3 class="text-xl font-bold mb-3">Cloud & Governance</h3>
+        <p class="text-slate-600">
+          Improve cloud structure, reliability, access control, and safe AI adoption.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- INDUSTRIES -->
-<section class="bg-white py-16">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Who We Work With</h2>
+<section class="bg-white py-20 border-y border-slate-200">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <h2 class="text-3xl md:text-4xl font-black mb-4">Built for Workflow-Heavy Businesses</h2>
+      <p class="text-slate-600 text-lg">
+        Practical cloud and AI enablement for teams that deal with documents, coordination, intake, revisions, and repetitive admin work.
+      </p>
+    </div>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <a href="/ai-for-law-firms.html" class="p-8 border rounded-xl hover:shadow">
-        <h3 class="text-xl font-semibold mb-2">Law Firms</h3>
-        <p>Improve intake, documents, and case workflows.</p>
+      <a href="/ai-for-law-firms.html" class="group bg-slate-50 p-9 rounded-3xl border border-slate-200 hover:shadow-xl transition">
+        <h3 class="text-2xl font-black mb-3 group-hover:text-blue-700">Law Firms</h3>
+        <p class="text-slate-600 text-lg">
+          Improve intake, document review, case summaries, and administrative workflows.
+        </p>
       </a>
 
-      <a href="/ai-for-engineering.html" class="p-8 border rounded-xl hover:shadow">
-        <h3 class="text-xl font-semibold mb-2">Engineering Firms</h3>
-        <p>Streamline design, RFIs, and coordination.</p>
+      <a href="/ai-for-engineering.html" class="group bg-slate-50 p-9 rounded-3xl border border-slate-200 hover:shadow-xl transition">
+        <h3 class="text-2xl font-black mb-3 group-hover:text-blue-700">Engineering Firms</h3>
+        <p class="text-slate-600 text-lg">
+          Improve project flow, design cycles, RFIs, revisions, and coordination.
+        </p>
       </a>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section id="faq" class="py-16 bg-slate-100">
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <h2 class="text-3xl md:text-4xl font-black mb-4">How We Work</h2>
+      <p class="text-slate-600 text-lg">
+        Clear, practical, and focused on business outcomes — not technology for technology’s sake.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-3xl shadow border border-slate-100">
+        <h3 class="font-black text-xl mb-3">1. Understand</h3>
+        <p class="text-slate-600">
+          We review your workflows, systems, and where time is being lost.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl shadow border border-slate-100">
+        <h3 class="font-black text-xl mb-3">2. Identify</h3>
+        <p class="text-slate-600">
+          We pinpoint where automation and AI can reduce manual work and improve flow.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl shadow border border-slate-100">
+        <h3 class="font-black text-xl mb-3">3. Deliver</h3>
+        <p class="text-slate-600">
+          You get a clear, practical plan focused on high-impact improvements.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-slate-100 py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-black mb-8">Example Outcome</h2>
+
+    <p class="text-slate-700 text-xl mb-6 leading-relaxed">
+      A firm struggling with intake delays can reduce manual processing time by structuring intake data and automating summaries — allowing the team to focus on higher-value work.
+    </p>
+
+    <p class="text-slate-500">
+      Results vary based on workflow complexity, but the goal is always the same: reduce friction and improve efficiency.
+    </p>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-black mb-10">Is This a Good Fit?</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 text-left">
+      <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+        <h3 class="font-black mb-4 text-green-600 text-xl">Good Fit</h3>
+        <ul class="text-slate-600 space-y-3">
+          <li>• Workflow-heavy business</li>
+          <li>• Lots of documents or coordination</li>
+          <li>• Repetitive administrative work</li>
+          <li>• Exploring AI but unsure where to start</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+        <h3 class="font-black mb-4 text-red-500 text-xl">Not a Fit</h3>
+        <ul class="text-slate-600 space-y-3">
+          <li>• Looking for a quick AI tool only</li>
+          <li>• No clear workflow challenges</li>
+          <li>• Not ready to improve processes</li>
+          <li>• Expecting results without operational change</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="bg-white py-20 border-y border-slate-200">
   <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-6 text-center">FAQ</h2>
+    <h2 class="text-3xl md:text-4xl font-black mb-10 text-center">FAQ</h2>
 
-    <div class="space-y-4 text-sm">
-      <p><strong>Do you replace systems?</strong> No, we improve what you already use.</p>
-      <p><strong>Do we need AI experience?</strong> No, we guide you.</p>
-      <p><strong>Who is this for?</strong> Workflow-heavy businesses.</p>
+    <div class="space-y-6 text-slate-700">
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+        <p><strong>Do you replace existing systems?</strong><br>No. We focus on improving how your current systems, workflows, and teams operate together.</p>
+      </div>
+
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+        <p><strong>Do we need AI experience?</strong><br>No. We help you understand where AI fits and what should be improved before adoption.</p>
+      </div>
+
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+        <p><strong>Is this only for law firms and engineering firms?</strong><br>No. Those are strong examples, but CirroBound can help workflow-heavy professional service businesses.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-white border-t py-6 text-center text-sm text-slate-500">
+<section class="bg-gradient-to-br from-blue-800 to-blue-950 text-white py-20 text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-black mb-5">Start With a Clear Plan</h2>
+    <p class="mb-8 text-blue-100 text-lg">
+      Get clarity on where automation and AI can actually improve your workflows.
+    </p>
+    <a href="https://outlook.office.com/book/AIReadinessAudit@cirrobound.com/" target="_blank"
+       class="bg-white text-blue-800 px-8 py-4 rounded-xl font-black shadow-xl hover:shadow-2xl transition">
+      Book Your AI Readiness Audit
+    </a>
+  </div>
+</section>
+
+<footer class="bg-white border-t border-slate-200 py-8 text-center text-sm text-slate-500">
   © 2026 CirroBound Solutions
 </footer>
 
