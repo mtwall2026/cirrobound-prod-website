@@ -6,6 +6,11 @@
   <title>Cirrobound Solutions</title>
   <meta name="description" content="Cloud, automation, and AI consulting to improve workflows and reduce manual work for law firms, engineering teams, and workflow-heavy businesses." />
   <link href="./output.css" rel="stylesheet">
+  <style>
+    .slide { transition: opacity 0.7s ease-in-out; }
+    #slidePrev:hover, #slideNext:hover { background: rgba(0,0,0,0.65) !important; }
+    .dot { transition: opacity 0.3s; }
+  </style>
 </head>
 
 <body class="bg-slate-50 text-slate-900">
@@ -90,6 +95,71 @@
          class="border border-white/70 px-7 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-800 transition">
         View Services
       </a>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-white border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-black mb-3">Our Work in Action</h2>
+      <p class="text-slate-600 text-lg">Practical improvements across real business environments.</p>
+    </div>
+
+    <div id="slideshow" class="relative rounded-3xl overflow-hidden shadow-2xl" style="height:480px;">
+
+      <div class="slide" style="position:absolute;inset:0;opacity:1;">
+        <img src="https://picsum.photos/seed/cirro1/1400/560" class="w-full h-full object-cover" alt="Cloud infrastructure consulting">
+        <div class="absolute inset-0 flex items-end" style="padding:2.5rem 3rem;background:linear-gradient(to top,rgba(0,0,0,0.65),transparent 60%);">
+          <div>
+            <p class="text-white font-black text-2xl" style="line-height:1.3;">Cloud Infrastructure Built for Your Business</p>
+            <p style="color:#93c5fd;margin-top:0.4rem;">Reliable, structured, and ready to scale.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" style="position:absolute;inset:0;opacity:0;">
+        <img src="https://picsum.photos/seed/cirro2/1400/560" class="w-full h-full object-cover" alt="Workflow automation">
+        <div class="absolute inset-0 flex items-end" style="padding:2.5rem 3rem;background:linear-gradient(to top,rgba(0,0,0,0.65),transparent 60%);">
+          <div>
+            <p class="text-white font-black text-2xl" style="line-height:1.3;">Workflow Automation That Fits How You Work</p>
+            <p style="color:#93c5fd;margin-top:0.4rem;">Less manual work. More time on what matters.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" style="position:absolute;inset:0;opacity:0;">
+        <img src="https://picsum.photos/seed/cirro3/1400/560" class="w-full h-full object-cover" alt="AI readiness consulting">
+        <div class="absolute inset-0 flex items-end" style="padding:2.5rem 3rem;background:linear-gradient(to top,rgba(0,0,0,0.65),transparent 60%);">
+          <div>
+            <p class="text-white font-black text-2xl" style="line-height:1.3;">AI Readiness for Law Firms and Engineering Teams</p>
+            <p style="color:#93c5fd;margin-top:0.4rem;">Practical adoption — not technology for its own sake.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" style="position:absolute;inset:0;opacity:0;">
+        <img src="https://picsum.photos/seed/cirro4/1400/560" class="w-full h-full object-cover" alt="Security and governance">
+        <div class="absolute inset-0 flex items-end" style="padding:2.5rem 3rem;background:linear-gradient(to top,rgba(0,0,0,0.65),transparent 60%);">
+          <div>
+            <p class="text-white font-black text-2xl" style="line-height:1.3;">Security and Governance You Can Trust</p>
+            <p style="color:#93c5fd;margin-top:0.4rem;">AI adoption built on a solid operational foundation.</p>
+          </div>
+        </div>
+      </div>
+
+      <button id="slidePrev" aria-label="Previous slide" class="rounded-full flex items-center justify-center"
+        style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);width:2.5rem;height:2.5rem;background:rgba(0,0,0,0.4);color:white;border:none;cursor:pointer;font-size:1.1rem;">&#8592;</button>
+      <button id="slideNext" aria-label="Next slide" class="rounded-full flex items-center justify-center"
+        style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);width:2.5rem;height:2.5rem;background:rgba(0,0,0,0.4);color:white;border:none;cursor:pointer;font-size:1.1rem;">&#8594;</button>
+
+      <div style="position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);display:flex;gap:0.5rem;">
+        <button class="dot" data-index="0" aria-label="Slide 1" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:1;border:none;cursor:pointer;padding:0;"></button>
+        <button class="dot" data-index="1" aria-label="Slide 2" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
+        <button class="dot" data-index="2" aria-label="Slide 3" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
+        <button class="dot" data-index="3" aria-label="Slide 4" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
+      </div>
+
     </div>
   </div>
 </section>
@@ -292,6 +362,31 @@
   btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
   });
+
+  (function() {
+    const slides = document.querySelectorAll('#slideshow .slide');
+    const dots = document.querySelectorAll('#slideshow .dot');
+    let current = 0;
+    let timer;
+
+    function goTo(n) {
+      slides[current].style.opacity = '0';
+      dots[current].style.opacity = '0.4';
+      current = ((n % slides.length) + slides.length) % slides.length;
+      slides[current].style.opacity = '1';
+      dots[current].style.opacity = '1';
+    }
+
+    function startTimer() {
+      timer = setInterval(() => goTo(current + 1), 5000);
+    }
+
+    document.getElementById('slidePrev').addEventListener('click', () => { goTo(current - 1); clearInterval(timer); startTimer(); });
+    document.getElementById('slideNext').addEventListener('click', () => { goTo(current + 1); clearInterval(timer); startTimer(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); clearInterval(timer); startTimer(); }));
+
+    startTimer();
+  })();
 </script>
 
 </body>
