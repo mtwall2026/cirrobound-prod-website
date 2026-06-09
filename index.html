@@ -70,7 +70,7 @@
 <!-- HERO + SLIDESHOW MERGED -->
 <section class="relative overflow-hidden text-white" style="min-height:620px;height:72vh;">
 
-  <!-- Slideshow backgrounds -->
+  <!-- Slideshow backgrounds + dots (all inside #slideshow so JS selectors find them) -->
   <div id="slideshow" style="position:absolute;inset:0;">
     <div class="slide" style="position:absolute;inset:0;opacity:1;">
       <img src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?w=1400&h=800&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="Cloud infrastructure consulting">
@@ -84,10 +84,16 @@
     <div class="slide" style="position:absolute;inset:0;opacity:0;">
       <img src="https://images.unsplash.com/photo-1690627931320-16ac56eb2588?w=1400&h=800&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="Cloud computing and security">
     </div>
+    <div style="position:absolute;bottom:1.25rem;left:50%;transform:translateX(-50%);display:flex;gap:0.5rem;z-index:3;">
+      <button class="dot" data-index="0" aria-label="Slide 1" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:1;border:none;cursor:pointer;padding:0;"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
+    </div>
   </div>
 
-  <!-- Dark overlay for text readability -->
-  <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0.65) 100%);"></div>
+  <!-- Dark overlay -->
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0.65) 100%);z-index:1;"></div>
 
   <!-- Hero content -->
   <div class="relative h-full flex flex-col items-center justify-center text-center px-6 py-20" style="z-index:2;">
@@ -121,19 +127,12 @@
   <button id="slideNext" aria-label="Next slide" class="rounded-full flex items-center justify-center"
     style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);width:2.5rem;height:2.5rem;background:rgba(0,0,0,0.4);color:white;border:none;cursor:pointer;font-size:1.1rem;z-index:3;">&#8594;</button>
 
-  <!-- Dots -->
-  <div style="position:absolute;bottom:1.25rem;left:50%;transform:translateX(-50%);display:flex;gap:0.5rem;z-index:3;">
-    <button class="dot" data-index="0" aria-label="Slide 1" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:1;border:none;cursor:pointer;padding:0;"></button>
-    <button class="dot" data-index="1" aria-label="Slide 2" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
-    <button class="dot" data-index="2" aria-label="Slide 3" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
-    <button class="dot" data-index="3" aria-label="Slide 4" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
-  </div>
-
 </section>
 
 <section class="py-20">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center max-w-3xl mx-auto mb-14">
+      <div style="width:48px;height:4px;background:#0ea5e9;border-radius:9999px;margin:0 auto 16px;"></div>
       <h2 class="text-3xl md:text-4xl font-black mb-4">What We Help With</h2>
       <p class="text-slate-600 text-lg">
         We focus on practical improvements first — stronger cloud structure, clearer workflows, and AI use cases that actually fit how your team works.
@@ -142,7 +141,7 @@
 
     <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition">
-        <div class="text-blue-700 font-black text-sm mb-3">01</div>
+        <div class="font-black text-sm mb-3" style="color:#0ea5e9;">01</div>
         <h3 class="text-xl font-bold mb-3">AI Readiness & Strategy</h3>
         <p class="text-slate-600">
           Identify where automation and AI can reduce repetitive work and improve business flow.
@@ -150,7 +149,7 @@
       </div>
 
       <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition">
-        <div class="text-blue-700 font-black text-sm mb-3">02</div>
+        <div class="font-black text-sm mb-3" style="color:#0ea5e9;">02</div>
         <h3 class="text-xl font-bold mb-3">Workflow Automation</h3>
         <p class="text-slate-600">
           Reduce manual follow-ups, handoffs, document tracking, intake work, and coordination delays.
@@ -158,7 +157,7 @@
       </div>
 
       <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition">
-        <div class="text-blue-700 font-black text-sm mb-3">03</div>
+        <div class="font-black text-sm mb-3" style="color:#0ea5e9;">03</div>
         <h3 class="text-xl font-bold mb-3">Cloud & Governance</h3>
         <p class="text-slate-600">
           Improve cloud structure, reliability, access control, and safe AI adoption.
@@ -293,23 +292,23 @@
     <h2 class="text-3xl md:text-4xl font-black mb-10 text-center">FAQ</h2>
 
     <div class="space-y-6 text-slate-700">
-      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200" style="border-left:4px solid #0ea5e9;">
         <p><strong>Do you replace existing systems?</strong><br>No. We focus on improving how your current systems, workflows, and teams operate together.</p>
       </div>
 
-      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200" style="border-left:4px solid #0ea5e9;">
         <p><strong>Do we need AI experience?</strong><br>No. We help you understand where AI fits and what should be improved before adoption.</p>
       </div>
 
-      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200" style="border-left:4px solid #0ea5e9;">
         <p><strong>Is this only for law firms and engineering firms?</strong><br>No. Those are strong examples, but CirroBound can help workflow-heavy professional service businesses.</p>
       </div>
 
-      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200" style="border-left:4px solid #0ea5e9;">
         <p><strong>What if we've already tried automation tools?</strong><br>That's actually common. Most tools fail not because the technology is wrong, but because the underlying workflow wasn't ready for it. Cirrobound starts by fixing the process first — so when automation is added, it actually sticks.</p>
       </div>
 
-      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200" style="border-left:4px solid #0ea5e9;">
         <p><strong>Do you work with small firms?</strong><br>Yes. Many of our engagements are with teams of 2 to 20 people. Smaller firms often have the most to gain — every hour saved has a bigger impact when your team is lean.</p>
       </div>
     </div>
