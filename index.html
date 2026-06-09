@@ -67,103 +67,68 @@
   </div>
 </header>
 
-<section class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-blue-700 text-white py-24 md:py-32">
-  <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,#38bdf8,transparent_35%),radial-gradient(circle_at_bottom_right,#2563eb,transparent_35%)]"></div>
+<!-- HERO + SLIDESHOW MERGED -->
+<section class="relative overflow-hidden text-white" style="min-height:620px;height:72vh;">
 
-  <div class="relative max-w-6xl mx-auto px-6 text-center">
-    <div class="inline-flex items-center rounded-full border border-blue-300/30 bg-white/10 px-4 py-2 text-sm text-blue-100 mb-8">
+  <!-- Slideshow backgrounds -->
+  <div id="slideshow" style="position:absolute;inset:0;">
+    <div class="slide" style="position:absolute;inset:0;opacity:1;">
+      <img src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?w=1400&h=800&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="Cloud infrastructure consulting">
+    </div>
+    <div class="slide" style="position:absolute;inset:0;opacity:0;">
+      <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1400&h=800&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="Team collaboration and workflow">
+    </div>
+    <div class="slide" style="position:absolute;inset:0;opacity:0;">
+      <img src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?w=1400&h=800&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="AI and automation technology">
+    </div>
+    <div class="slide" style="position:absolute;inset:0;opacity:0;">
+      <img src="https://images.unsplash.com/photo-1690627931320-16ac56eb2588?w=1400&h=800&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="Cloud computing and security">
+    </div>
+  </div>
+
+  <!-- Dark overlay for text readability -->
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0.65) 100%);"></div>
+
+  <!-- Hero content -->
+  <div class="relative h-full flex flex-col items-center justify-center text-center px-6 py-20" style="z-index:2;">
+    <div class="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm text-blue-100 mb-8">
       Cloud foundation • Workflow automation • Practical AI readiness
     </div>
-
-    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-7 leading-tight tracking-tight">
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-7 leading-tight tracking-tight" style="text-shadow:0 2px 16px rgba(0,0,0,0.8);">
       Cloud and AI Solutions Built for Real Workflows
     </h1>
-
-    <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-5">
+    <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-5" style="color:rgba(255,255,255,0.92);text-shadow:0 1px 8px rgba(0,0,0,0.7);">
       Reduce manual work, improve workflows, and prepare your business for practical automation and AI.
     </p>
-
-    <p class="text-blue-200 mb-10">
+    <p class="mb-10" style="color:rgba(255,255,255,0.78);text-shadow:0 1px 8px rgba(0,0,0,0.7);">
       Built for law firms, engineering teams, and workflow-heavy businesses.
     </p>
-
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       <a href="https://outlook.office.com/book/AIReadiness@cirrobound.com/" target="_blank"
          class="bg-white text-blue-800 px-7 py-4 rounded-xl font-bold shadow-xl hover:shadow-2xl transition">
         Book a Free 30-Min Workflow Review
       </a>
-
       <a href="/services.html"
          class="border border-white/70 px-7 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-800 transition">
         View Services
       </a>
     </div>
   </div>
-</section>
 
-<section class="py-16 bg-white border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl md:text-4xl font-black mb-3">Our Work in Action</h2>
-      <p class="text-slate-600 text-lg">Practical improvements across real business environments.</p>
-    </div>
+  <!-- Prev / Next -->
+  <button id="slidePrev" aria-label="Previous slide" class="rounded-full flex items-center justify-center"
+    style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);width:2.5rem;height:2.5rem;background:rgba(0,0,0,0.4);color:white;border:none;cursor:pointer;font-size:1.1rem;z-index:3;">&#8592;</button>
+  <button id="slideNext" aria-label="Next slide" class="rounded-full flex items-center justify-center"
+    style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);width:2.5rem;height:2.5rem;background:rgba(0,0,0,0.4);color:white;border:none;cursor:pointer;font-size:1.1rem;z-index:3;">&#8594;</button>
 
-    <div id="slideshow" class="relative rounded-3xl overflow-hidden shadow-2xl" style="height:480px;">
-
-      <div class="slide" style="position:absolute;inset:0;opacity:1;">
-        <img src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?w=1400&h=560&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="Cloud infrastructure consulting">
-        <div class="absolute inset-0 flex items-end" style="padding:2.5rem 3rem;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.5) 60%,transparent 100%);text-shadow:0 1px 6px rgba(0,0,0,0.9);">
-          <div>
-            <p class="text-white font-black text-2xl" style="line-height:1.3;">Cloud Infrastructure Built for Your Business</p>
-            <p style="color:rgba(255,255,255,0.9);margin-top:0.4rem;">Reliable, structured, and ready to scale.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide" style="position:absolute;inset:0;opacity:0;">
-        <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1400&h=560&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="Team collaboration and workflow">
-        <div class="absolute inset-0 flex items-end" style="padding:2.5rem 3rem;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.5) 60%,transparent 100%);text-shadow:0 1px 6px rgba(0,0,0,0.9);">
-          <div>
-            <p class="text-white font-black text-2xl" style="line-height:1.3;">Workflow Automation That Fits How You Work</p>
-            <p style="color:rgba(255,255,255,0.9);margin-top:0.4rem;">Less manual work. More time on what matters.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide" style="position:absolute;inset:0;opacity:0;">
-        <img src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?w=1400&h=560&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="AI and automation technology">
-        <div class="absolute inset-0 flex items-end" style="padding:2.5rem 3rem;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.5) 60%,transparent 100%);text-shadow:0 1px 6px rgba(0,0,0,0.9);">
-          <div>
-            <p class="text-white font-black text-2xl" style="line-height:1.3;">AI Readiness for Law Firms and Engineering Teams</p>
-            <p style="color:rgba(255,255,255,0.9);margin-top:0.4rem;">Practical adoption — not technology for its own sake.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide" style="position:absolute;inset:0;opacity:0;">
-        <img src="https://images.unsplash.com/photo-1690627931320-16ac56eb2588?w=1400&h=560&fit=crop&auto=format&q=80" class="w-full h-full object-cover" alt="Cloud computing and security">
-        <div class="absolute inset-0 flex items-end" style="padding:2.5rem 3rem;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.5) 60%,transparent 100%);text-shadow:0 1px 6px rgba(0,0,0,0.9);">
-          <div>
-            <p class="text-white font-black text-2xl" style="line-height:1.3;">Security and Governance You Can Trust</p>
-            <p style="color:rgba(255,255,255,0.9);margin-top:0.4rem;">AI adoption built on a solid operational foundation.</p>
-          </div>
-        </div>
-      </div>
-
-      <button id="slidePrev" aria-label="Previous slide" class="rounded-full flex items-center justify-center"
-        style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);width:2.5rem;height:2.5rem;background:rgba(0,0,0,0.4);color:white;border:none;cursor:pointer;font-size:1.1rem;">&#8592;</button>
-      <button id="slideNext" aria-label="Next slide" class="rounded-full flex items-center justify-center"
-        style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);width:2.5rem;height:2.5rem;background:rgba(0,0,0,0.4);color:white;border:none;cursor:pointer;font-size:1.1rem;">&#8594;</button>
-
-      <div style="position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);display:flex;gap:0.5rem;">
-        <button class="dot" data-index="0" aria-label="Slide 1" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:1;border:none;cursor:pointer;padding:0;"></button>
-        <button class="dot" data-index="1" aria-label="Slide 2" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
-        <button class="dot" data-index="2" aria-label="Slide 3" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
-        <button class="dot" data-index="3" aria-label="Slide 4" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
-      </div>
-
-    </div>
+  <!-- Dots -->
+  <div style="position:absolute;bottom:1.25rem;left:50%;transform:translateX(-50%);display:flex;gap:0.5rem;z-index:3;">
+    <button class="dot" data-index="0" aria-label="Slide 1" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:1;border:none;cursor:pointer;padding:0;"></button>
+    <button class="dot" data-index="1" aria-label="Slide 2" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
+    <button class="dot" data-index="2" aria-label="Slide 3" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
+    <button class="dot" data-index="3" aria-label="Slide 4" style="width:10px;height:10px;border-radius:9999px;background:white;opacity:0.4;border:none;cursor:pointer;padding:0;"></button>
   </div>
+
 </section>
 
 <section class="py-20">
